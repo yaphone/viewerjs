@@ -107,11 +107,21 @@ export default {
         break;
 
       case 'flip-horizontal':
-        this.scaleX(-imageData.scaleX || -1);
+        document.getElementById('contextmenu2').style.top = '200px'
+        document.getElementById('contextmenu2').style.left = '200px'
+        document.getElementById('contextmenu2').style.display="block"
+        var title = document.getElementsByClassName("viewer-move viewer-transition")[0].alt
+        document.getElementById('oldFilename').innerHTML = title
+        // this.scaleX(-imageData.scaleX || -1);
         break;
 
       case 'flip-vertical':
-        this.scaleY(-imageData.scaleY || -1);
+        document.getElementById('contextmenu2').style.top = '200px'
+        document.getElementById('contextmenu2').style.left = '200px'
+        document.getElementById('contextmenu2').style.display="block"
+        var title = document.getElementsByClassName("viewer-move viewer-transition")[0].alt
+        document.getElementById('oldFilename').innerHTML = title
+        // this.scaleY(-imageData.scaleY || -1);
         break;
 
       default:
