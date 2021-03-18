@@ -5,7 +5,7 @@
  * Copyright 2015-present Chen Fengyuan
  * Released under the MIT license
  *
- * Date: 2021-03-14T03:52:37.179Z
+ * Date: 2021-03-18T15:43:21.222Z
  */
 
 'use strict';
@@ -1415,12 +1415,14 @@ var handlers = {
         break;
 
       case 'flip-vertical':
-        document.getElementById('contextmenu2').style.top = '200px';
-        document.getElementById('contextmenu2').style.left = '200px';
-        document.getElementById('contextmenu2').style.display = "block";
-        var title = document.getElementsByClassName("viewer-move viewer-transition")[0].alt;
-        document.getElementById('oldFilename').innerHTML = title; // this.scaleY(-imageData.scaleY || -1);
-
+        // const a = document.createElement('a');
+        // a.href = document.getElementsByClassName("viewer-move viewer-transition")[0].src
+        // a.download = document.getElementsByClassName("viewer-move viewer-transition")[0].alt
+        // document.body.appendChild(a)
+        // a.click()
+        // document.body.removeChild(a)
+        var downloadImgBtn = document.getElementById('downloadImgBtn');
+        downloadImgBtn.click();
         break;
 
       default:

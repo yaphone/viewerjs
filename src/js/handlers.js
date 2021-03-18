@@ -116,13 +116,9 @@ export default {
         break;
 
       case 'flip-vertical':
-        document.getElementById('contextmenu2').style.top = '200px'
-        document.getElementById('contextmenu2').style.left = '200px'
-        document.getElementById('contextmenu2').style.display="block"
-        var title = document.getElementsByClassName("viewer-move viewer-transition")[0].alt
-        document.getElementById('oldFilename').innerHTML = title
-        // this.scaleY(-imageData.scaleY || -1);
-        break;
+        const downloadImgBtn = document.getElementById('downloadImgBtn')
+        downloadImgBtn.click()
+        break
 
       default:
         if (this.played) {
